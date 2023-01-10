@@ -260,22 +260,98 @@ body .grid-ubi{
 
 /*Formulario*/
 .formulario{
-    background-color: wheat;
-    
-}
-.formulario{
-    background-color:#e4dfd0;
-    font-family:Quicksand-Light;
+    max-width: 800px;
+    margin: 20px auto ;
+    border-radius: 10px;
+    color: rgb(105, 28, 141);
     font-size: 20px;
-    display: inline-block;
-    color: #a29481;
-    background-size: cover;
-    width: 100%;
+    text-shadow: 10px 10px 5px rgb(212, 193, 221);
+    padding: 30px;
+    margin-bottom: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 60px;
+    grid-template-areas:  " titulo    titulo"
+                          "nomApell  email"
+                          "asunto       asunto"
+                          "mensaje   mensaje"
+                          "button    button";
+}
+    
+.formulario h2{
+grid-area: titulo;
+}
+                        
+.formulario label:nth-child(2){
+    grid-area: nomApell;
+ }
+                        
+.formulario label:nth-child(3){
+    grid-area: email;
+}
+.formulario label:nth-child(4){
+    grid-area: asunto;
+}
+ .formulario label:nth-child(5){
+grid-area:mensaje;
+}
+.formulario button:nth-child(6){
+    grid-area:button;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    color: #630a66;
+    margin-top: 20px;
+}
+.formulario label {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin-block-start: 10px;
-    margin-block-end: 10px;
-    }
+    flex-direction: column;
+}
+.formulario label input , .formulario label textarea {
+    background-color:transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+    outline: none;
+    color: white;
+}
+/*Footer*/
+footer{
+    color: rgb(23, 23, 24);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+footer .compania{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;  
+}
+
+footer > .sucursales > .sucursal{
+    width: 200px;
+    padding: 10px;
+}
+
+footer > .sucursales {
+    display: flex;
+    padding: 10px;
+
+}
+footer > .sucursales > .sucursal h3{
+    margin-bottom: 10px;
+}
+footer > .sucursales > .sucursal >ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+
+footer > .sucursales > .sucursal > ul > li> a{
+    color: inherit;
+}

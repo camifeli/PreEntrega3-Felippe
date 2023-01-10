@@ -20,38 +20,36 @@
         </ul>
     </nav>
     <header>
-            <h1>Contacto</h1>
+        <img class="imgcontacto" src="../assets/img/tienda 1.jpg" alt="">
     </header>
-    <main class="Formulario">
-        <form action="" method="get">
-            <label> 
-                Nombre:
-                <input type="text" name="nombre">
+    <main>
+        <form class="formulario" action="">
+            <h2>Contactanos</h2>
+            <label>
+                Nombre Completo
+                <input type="text" name="nomApell" required>
             </label>
             <label>
-                Apellido:
-                <input type="text" name="apellido"> 
+                Email
+                <input type="email" name="email" required>
             </label>
-              <label>
-                Mail:
-                <input type="text" name="mail" required> 
-            </label> 
             <label>
-                Ingrese su mensaje:
+                Asunto
+                <input type="text" name="asunto" required>
+            </label>
+            <label>
+                Mensaje
                 <textarea name="mensaje"></textarea>
             </label>
-            <label>
-                Registrate para recibir nuestro newsletter
-                <input type="checkbox" name="acepto" value="1"required>
-            </label>
-            
-            <input type="submit" value="Enviar">
+            <button type="submit">Enviar</button>
+
         </form>
     </main>
     <aside>
 
     </aside>
     <footer>
+        
         <div>
             <p>Desarrollado por CamiF/ Todos los derechos reservados</p>
         </div>
