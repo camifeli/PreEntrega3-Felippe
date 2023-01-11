@@ -1,0 +1,38 @@
+ .navegador{
+    width: 100%;
+    height: 100px;
+    text-decoration: none;
+    background-color: beige;
+    position:fixed;
+    top: 0;
+    z-index: 2;  
+    > ul{
+        display: flex;
+        justify-content: end;
+        > li{
+            display: inline-block;
+            a{
+                display: block;
+                padding: 20px 30px;
+                text-decoration: none;
+                color:rgb(142, 119, 165);
+                font-size: 20px;
+                
+            }
+         }
+    }   
+}
+
+/* desplegable*/
+.navegador > ul > li >ul{ 
+    display: none;
+    background-color: beige;
+    list-style: none;
+    color: rgb(142, 119, 165);
+    font-size: 18px;
+}
+ 
+.navegador > ul > li:hover ul{ 
+    display: block;
+    position: absolute;
+} 
